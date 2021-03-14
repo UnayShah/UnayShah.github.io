@@ -4,15 +4,24 @@ var minutes = 0;
 var seconds = 0;
 var milliseconds = 0;
 var running = false;
+var newTimer = true;
 var startButton;
 var stopButton;
+var lapButton;
+var clearButton;
+var lapList;
 
 document.addEventListener("DOMContentLoaded", (event) => {
     stopwatchText = document.getElementById("stopwatchText")
     startButton = document.getElementById("startButton");
     stopButton = document.getElementById("stopButton");
+    lapButton = document.getElementById("lapButton");
+    lapList = document.getElementById("lapList");
+    clearButton = document.getElementById("clearButton");
     startButton.onclick = function () { startStopwatch() };
     stopButton.onclick = function () { stopStopwatch() };
+    lapButton.onclick = function () { lapStopwatch() };
+    clearButton.onclick = function () { clearStopwatch() };
     resetStopwatch();
     stopStopwatch();
 });
@@ -33,22 +42,30 @@ function getStopwatchText() {
 }
 
 function startStopwatch() {
+    if (newTimer) {
+        clearStopwatch();
+    }
     if (!running) {
         running = true;
         startButton.innerHTML = "PAUSE"
         stopButton.style.opacity = 1;
+        stopButton.className = "stopwatchButton";
+        newTimer = false;
         timerRunning();
     }
     else {
-        startButton.innerHTML = "START"
+        stopButton.className = "stopwatchButton";
+        startButton.innerHTML = "RESUME"
         running = false;
     }
 }
 
 function stopStopwatch() {
     running = false;
+    newTimer = true;
     startButton.innerHTML = "START"
-    stopButton.style.opacity = 0.5;
+    stopButton.style.opacity = 0.2;
+    stopButton.className = "stopwatchButton disabled";
     resetStopwatch();
 }
 function timerRunning() {
@@ -56,6 +73,26 @@ function timerRunning() {
         milliseconds += 1;
         stopwatchText.innerHTML = getStopwatchText();
         setTimeout(function () { timerRunning() }, 10);
+    }
+}
+
+function lapStopwatch() {
+    if (running) {
+        const lapDiv = document.createElement("div");
+        if (!document.getElementById("themeSwitch").checked)
+            lapDiv.className = "lap";
+        else
+            lapDiv.className = "lap dark";
+        lapDiv.innerHTML = getStopwatchText();
+        lapList.appendChild(lapDiv);
+    }
+}
+
+function clearStopwatch() {
+    if (!running && startButton.innerHTML === "START") {
+        while (lapList.firstChild) {
+            lapList.removeChild(lapList.firstChild);
+        }
     }
 }
 function resetStopwatch() {
