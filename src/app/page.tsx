@@ -4,6 +4,7 @@ import Experience from './sections/experience'
 import ContactMe from './sections/contact_me'
 import Education from './sections/education'
 import Sidebar from './sections/sidebar'
+import Hobbies from './sections/hobbies'
 
 export default function Home() {
   return (
@@ -21,6 +22,12 @@ export default function Home() {
         </div>
         <div id='education'>
           <Education />
+        </div>
+        <div id='hobbies'>
+          <Hobbies/>
+        </div>
+        <div id='projects'>
+
         </div>
         <div id='contact'>
           <ContactMe />

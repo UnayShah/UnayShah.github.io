@@ -1,4 +1,4 @@
-import { ContactMail, Person, School, Work } from '@mui/icons-material'
+import { ContactMail, Fitbit, Person, School, Work } from '@mui/icons-material'
 import { useState } from 'react'
 import SectionButton from '../components/section_button';
 
@@ -6,6 +6,7 @@ export default function Sidebar() {
     const [bioVisible, setBioVisible] = useState(false);
     const [expVisible, setExpVisible] = useState(false);
     const [eduVisible, setEduVisible] = useState(false);
+    const [hobbiesVisible, setHobbiesVisible] = useState(false);
     const [contactVisible, setContactVisible] = useState(false);
 
     const handleScroll = (targetId: string) => {
@@ -50,6 +51,14 @@ export default function Sidebar() {
                 setVisibility={setEduVisible}
                 visibility={eduVisible}
                 key='education'
+            />
+            <SectionButton handleScroll={handleScroll}
+                handleScrollId='hobbies'
+                hoverText='Hobbies'
+                icon={Fitbit}
+                setVisibility={setHobbiesVisible}
+                visibility={hobbiesVisible}
+                key='hobbies'
             />
 
             <SectionButton handleScroll={handleScroll}

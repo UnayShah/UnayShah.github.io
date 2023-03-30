@@ -1,4 +1,3 @@
-import NextSectionButton from "../components/next_section_button";
 import ExperienceBlock from "../components/experience_block";
 
 export default function Experience() {
