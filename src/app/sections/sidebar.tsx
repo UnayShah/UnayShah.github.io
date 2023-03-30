@@ -1,6 +1,5 @@
-import { Close, ContactMail, Fitbit, Menu, Person, School, Work } from '@mui/icons-material'
+import { Close, Menu } from '@mui/icons-material'
 import { useState } from 'react'
-import SectionButton from '../components/section_button';
 import SectionButtons from '../components/section_buttons';
 
 export default function Sidebar() {
@@ -29,7 +28,7 @@ export default function Sidebar() {
                     <div className='bg-slate-900 flex-1 md:grow-0'>
                         <button
                             className='m-4 p-1 md:p-3'>
-                            <Person htmlColor='#e2e8f0' className='scale-150 invisible' />
+                            <Menu htmlColor='#e2e8f0' className='scale-150 invisible' />
                         </button>
                     </div>
                 </div>
@@ -40,7 +39,7 @@ export default function Sidebar() {
                     <div className='bg-slate-900 flex-1 md:grow-0'>
                         <button
                             className='m-4 p-1 md:p-3'>
-                            <Person htmlColor='#e2e8f0' className='scale-150 invisible' />
+                            <Menu htmlColor='#e2e8f0' className='scale-150 invisible' />
                         </button>
                     </div>
                 </div>
