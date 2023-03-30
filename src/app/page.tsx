@@ -5,10 +5,14 @@ import ContactMe from './sections/contact_me'
 import Education from './sections/education'
 import Sidebar from './sections/sidebar'
 import Hobbies from './sections/hobbies'
+import Head from 'next/head'
 
 export default function Home() {
   return (
     <div>
+      <Head>
+        <meta property="og:image" content={"/photos/profile_small.jpg"} />
+      </Head>
       <div className='h-full min-h-screen flex flex-row md:flex-col fixed z-[100]'>
         <Sidebar />
       </div>
@@ -24,7 +28,7 @@ export default function Home() {
           <Education />
         </div>
         <div id='hobbies'>
-          <Hobbies/>
+          <Hobbies />
         </div>
         <div id='projects'>
 
