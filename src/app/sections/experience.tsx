@@ -43,7 +43,7 @@ export default function Experience() {
                     company_name="Samsung Research Institute"
                     duration="Jan 2020 - Jun 2020" />
 
-                <ExperienceBlock logo_path="/photos/ZConnect.png"
+                <ExperienceBlock logo_path="/photos/Zconnect.png"
                     alt="ZConnect Logo"
                     width={40}
                     height={40}

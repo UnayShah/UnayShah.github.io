@@ -13,8 +13,8 @@ export default function Sidebar() {
                     <button
                         className='border-slate-500 border-2 rounded-lg m-2 p-2 w-fit ml-4'
                         onClick={() => toggleMenu(!menu)}>
-                        <Menu className='scale-120' style={{ display: menu ? 'none' : 'block' }} />
-                        <Close className='scale-120' style={{ display: menu ? 'block' : 'none' }} />
+                        <Menu className='scale-120' htmlColor='#e2e8f0' style={{ display: menu ? 'none' : 'block' }} />
+                        <Close className='scale-120' htmlColor='#e2e8f0' style={{ display: menu ? 'block' : 'none' }} />
                     </button>
                     <div className='h-fit w-screen flex border-slate-800 border-1' style={{ display: menu ? 'flex' : 'none' }}>
                         <SectionButtons toggleMenu={toggleMenu} />
