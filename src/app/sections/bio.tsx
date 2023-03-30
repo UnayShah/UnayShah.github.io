@@ -5,15 +5,8 @@ import NextSectionButton from '../components/next_section_button'
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Bio() {
-    const handleScroll = (targetId: string) => {
-        const elem = document.getElementById(targetId);
-        window.scrollTo({
-            top: elem?.getBoundingClientRect().top,
-            behavior: "smooth",
-        });
-    };
     return (
-        <div className='flex min-h-screen w-full justify-center items-center flex-col z-10'>
+        <div className='flex min-h-screen w-full justify-center items-center flex-col'>
             <div className='flex flex-col lg:flex-row flex-1 justify-center'>
                 <div className='self-center'>
                     <Image

@@ -9,7 +9,7 @@ import Hobbies from './sections/hobbies'
 export default function Home() {
   return (
     <div>
-      <div className='h-full min-h-screen flex flex-row md:flex-col fixed'>
+      <div className='h-full min-h-screen flex flex-row md:flex-col fixed z-[100]'>
         <Sidebar />
       </div>
 

@@ -26,7 +26,7 @@ export default function ContactForm() {
                     id='message'
                     autoComplete="off" />
                 <input type="submit" id="submit" name="submit" placeholder="Submit"
-                    className="m-1 bg-slate-800 text-slate-200 font-md w-fit p-2 self-center border-none" />
+                    className="m-2 bg-slate-800 text-slate-200 font-md w-fit p-2 self-center border-none rounded-md" />
             </div>
         </form>
     )

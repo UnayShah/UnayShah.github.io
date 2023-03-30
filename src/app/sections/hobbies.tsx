@@ -16,11 +16,10 @@ export default function Hobbies() {
                         target='_blank'
                         className="underline">this image</a>. I am always up for exploring and clicking new places.
                 </div>
-                <div className="max-h-fit items-center">
-                    <Marquee className="md:max-w-xl sm:max-w-md max-w-sm max-h-fit"
+                <div className="items-center self-center">
+                    <Marquee className="md:max-w-xl sm:max-w-md"
                         gradient={false}
-                        pauseOnHover
-                        speed={30}>
+                        speed={20}>
                         {
                             imageList.map((image, index) => (
                                 <Image src={image}
@@ -28,7 +27,8 @@ export default function Hobbies() {
                                     alt={index.toString()}
                                     width={400}
                                     height={400}
-                                    className="scale-50 sm:scale-90 md:scale-95 md:ml-1 md:mr-1 max-h-fit" />
+                                    priority={false}
+                                    className="" />
                             ))
                         }
                     </Marquee>
