@@ -6,6 +6,7 @@ import Education from './sections/education'
 import Sidebar from './sections/sidebar'
 import Hobbies from './sections/hobbies'
 import Head from 'next/head'
+import Projects from './components/projects'
 
 export default function Home() {
   return (
@@ -31,7 +32,7 @@ export default function Home() {
           <Hobbies />
         </div>
         <div id='projects'>
-
+          <Projects />
         </div>
         <div id='contact'>
           <ContactMe />

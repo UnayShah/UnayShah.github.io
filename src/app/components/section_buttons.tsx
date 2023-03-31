@@ -1,4 +1,4 @@
-import { ContactMail, Fitbit, Menu, Person, School, Work } from '@mui/icons-material'
+import { Code, ContactMail, Fitbit, Menu, Person, School, Work } from '@mui/icons-material'
 import { useState } from 'react'
 import SectionButton from '../components/section_button';
 
@@ -10,6 +10,7 @@ export default function SectionButtons(props: SectionButtonsProps) {
     const [expVisible, setExpVisible] = useState(false);
     const [eduVisible, setEduVisible] = useState(false);
     const [hobbiesVisible, setHobbiesVisible] = useState(false);
+    const [projectsVisible, setProjectsVisible] = useState(false);
     const [contactVisible, setContactVisible] = useState(false);
 
     const handleScroll = (targetId: string) => {
@@ -59,7 +60,15 @@ export default function SectionButtons(props: SectionButtonsProps) {
                 visibility={hobbiesVisible}
                 key='hobbies'
             />
-
+            <SectionButton handleScroll={handleScroll}
+                handleScrollId='projects'
+                hoverText='Projects'
+                icon={Code}
+                setVisibility={setProjectsVisible}
+                toggleMenu={props.toggleMenu}
+                visibility={projectsVisible}
+                key='projects'
+            />
             <SectionButton handleScroll={handleScroll}
                 handleScrollId='contact'
                 hoverText='Contact Me'

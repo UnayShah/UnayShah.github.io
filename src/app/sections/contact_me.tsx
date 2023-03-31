@@ -8,6 +8,9 @@ export default function ContactMe() {
     const [instagramLogoSrc, setInstagramLogoSrc] = useState("\\icons\\instagram\\instagram_black.svg");
     return (
         <div>
+            <div className="text-2xl font-bold sm:text-3xl self-center text-center mt-2 md:mt-5">
+                Contact Me
+            </div>
             <div className="flex flex-col justify-center items-center">
                 <div className="font-medium text-lg m-2">Send me an Email:</div>
                 <ContactForm />
