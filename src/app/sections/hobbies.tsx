@@ -11,24 +11,21 @@ export default function Hobbies() {
             <div>
                 <div className="text-xl font-bold text-center">Photography</div>
                 <div className="md:max-w-xl sm:max-w-md self-center justify-center items-center align-middle text-center">
-                    I have been clicking since 2014 and have owned a Nikon D3300 and D5300. Currently, I have a Nikon D5600, which I won
-                    for <a href='https://www.facebook.com/NikonSchoolIndia/photos/a.1507937159242239/1507937269242228/'
-                        target='_blank'
-                        className="underline">this image</a>. I am always up for exploring and clicking new places.
+                    I have been clicking since 2014 and currently use a Nikon D5600. I am always up for exploring and clicking new places. Here are a few of my clicks.
                 </div>
                 <div className="items-center self-center">
                     <Marquee className="md:max-w-xl sm:max-w-md"
                         gradient={false}
-                        speed={20}>
+                        speed={25}>
                         {
                             imageList.map((image, index) => (
                                 <Image src={image}
                                     key={index}
                                     alt={index.toString()}
-                                    width={400}
-                                    height={400}
-                                    priority={false}
-                                    className="" />
+                                    width={300}
+                                    height={300}
+                                    priority
+                                    className="w-auto h-auto" />
                             ))
                         }
                     </Marquee>
