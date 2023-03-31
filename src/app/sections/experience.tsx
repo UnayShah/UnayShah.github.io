@@ -3,7 +3,7 @@ import ExperienceBlock from "../components/experience_block";
 export default function Experience() {
     return (
         <div className='flex flex-col min-h-screen w-full items-center'>
-            <div className="text-2xl font-bold sm:text-3xl md:text-5xlself-center mt-2 mb-10 md:mt-5">
+            <div className="text-2xl font-bold sm:text-3xl self-center mt-2 mb-10 md:mt-5">
                 Experience
             </div>
             <div className="flex flex-col flex-1 justify-center">

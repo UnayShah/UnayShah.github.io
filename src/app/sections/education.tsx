@@ -3,7 +3,7 @@ import EducationBlock from "../components/education_block";
 export default function Education() {
     return (
         <div className="flex flex-col align-middle items-center justify-center">
-            <div className="text-2xl font-bold sm:text-3xl md:text-5xlself-center mt-2 md:mt-5">
+            <div className="text-2xl font-bold sm:text-3xl self-center mt-2 md:mt-5">
                 Education
             </div>
             <div className="flex flex-col   ">
