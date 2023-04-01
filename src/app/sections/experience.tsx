@@ -13,8 +13,8 @@ export default function Experience() {
                     height={50}
                     position="Software Intern"
                     location="San Diego, CA, USA"
-                    description={["Created a Python Script to transfer Segment Data logs from Amazon S3 Buckets to AWS Postgres Database.",
-                        "Successfully processed and transferred 100K+ logs, tracking file creation data and other metadata.",]}
+                    description={["Transferred Segment Data logs from Amazon S3 Buckets to AWS Postgres Database.",
+                        "Successfully processed and transferred 300K+ logs, tracking file creation data and other metadata.",]}
                     company_name="OmniSync Incorporated"
                     duration="Jan 2023 - Mar 2023" />
                 

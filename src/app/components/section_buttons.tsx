@@ -52,15 +52,6 @@ export default function SectionButtons(props: SectionButtonsProps) {
                 key='education'
             />
             <SectionButton handleScroll={handleScroll}
-                handleScrollId='hobbies'
-                hoverText='Hobbies'
-                icon={Fitbit}
-                setVisibility={setHobbiesVisible}
-                toggleMenu={props.toggleMenu}
-                visibility={hobbiesVisible}
-                key='hobbies'
-            />
-            <SectionButton handleScroll={handleScroll}
                 handleScrollId='projects'
                 hoverText='Projects'
                 icon={Code}
@@ -68,6 +59,15 @@ export default function SectionButtons(props: SectionButtonsProps) {
                 toggleMenu={props.toggleMenu}
                 visibility={projectsVisible}
                 key='projects'
+            />
+            <SectionButton handleScroll={handleScroll}
+                handleScrollId='hobbies'
+                hoverText='Hobbies'
+                icon={Fitbit}
+                setVisibility={setHobbiesVisible}
+                toggleMenu={props.toggleMenu}
+                visibility={hobbiesVisible}
+                key='hobbies'
             />
             <SectionButton handleScroll={handleScroll}
                 handleScrollId='contact'

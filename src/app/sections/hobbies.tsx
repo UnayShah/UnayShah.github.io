@@ -16,7 +16,7 @@ export default function Hobbies() {
                 <div className="items-center self-center">
                     <Marquee className="md:max-w-xl sm:max-w-md"
                         gradient={false}
-                        speed={20}>
+                        speed={15}>
                         {
                             imageList.map((image, index) => (
                                 <Image src={image}
@@ -32,25 +32,7 @@ export default function Hobbies() {
                 </div>
             </div>
             <div className="text-xl font-bold m-1">Ultimate Frisbee</div>
-            <div className="md:max-w-xl sm:max-w-md self-center justify-center items-center align-middle text-center">
-                Started playing
-                with <a href='https://instagram.com/bitsufc'
-                    target="_blank"
-                    className="underline">BITS UFC</a>.<br />Feel free to hit me up for throws</div>
             <div className="text-xl font-bold m-2">Cycling</div>
-            <div className="md:max-w-xl sm:max-w-md self-center justify-center items-center align-middle text-center">
-                Currently only cycling to classes on
-                a <a href="https://www.walmart.com/ip/492337141"
-                    target="_blank"
-                    className="underline">Rockrider ST100</a>.<br />
-                Often cycled from Ahmedabad to Gandhinagar
-                on <a href='https://goo.gl/maps/BRstd4YpaB14DUdJ8'
-                    target="_blank"
-                    className="underline">
-                    S.P. Ring Road
-                </a>.
-            </div>
-
         </div>
     )
 }
