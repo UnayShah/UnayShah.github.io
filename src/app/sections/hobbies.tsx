@@ -5,11 +5,11 @@ const imageList = ['/gallery/1.jpg', '/gallery/2.jpg', '/gallery/3.jpg', '/galle
 export default function Hobbies() {
     return (
         <div className='flex flex-col w-full items-center'>
-            <div className="text-2xl font-bold sm:text-3xl self-center mt-2 md:mt-5">
+            <div className="text-2xl font-bold sm:text-3xl self-center m-2 md:m-5">
                 Hobbies
             </div>
             <div>
-                <div className="text-xl font-bold text-center">Photography</div>
+                <div className="text-xl font-bold text-center m-2">Photography</div>
                 <div className="md:max-w-xl sm:max-w-md self-center justify-center items-center align-middle text-center">
                     I have been clicking since 2014 and currently use a Nikon D5600. I am always up for exploring and clicking new places. Here are a few of my clicks.
                 </div>
@@ -32,7 +32,7 @@ export default function Hobbies() {
                 </div>
             </div>
             <div>
-                <div className="text-xl font-bold m-1">Ultimate Frisbee</div>
+                <div className="text-xl font-bold text-center m-2">Ultimate Frisbee</div>
                 <div className="md:max-w-xl sm:max-w-md self-center justify-center items-center align-middle text-center">
                     I started playing Ultimate with <a href='https://instagram.com/bitsufc' target="_blank" className="underline">BITS UFC</a> in 2016. I served as the team coordinator in 2018-19, and organized India West Zone Sectionals tournament in 2018.</div>
             </div>
