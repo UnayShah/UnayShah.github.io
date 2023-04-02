@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Marquee from "react-fast-marquee";
 
-const imageList = ['/gallery/1.jpg', '/gallery/2.jpg', '/gallery/3.jpg', '/gallery/4.jpg', '/gallery/5.jpg', '/gallery/6.jpg', '/gallery/7.jpg', '/gallery/8.jpg', '/gallery/9.jpg', '/gallery/10.jpg', '/gallery/11.jpg', '/gallery/12.jpg', '/gallery/13.jpg', '/gallery/14.jpg', '/gallery/15.jpg'];
+const imageList = ['/gallery/1.jpg', '/gallery/2.jpg', '/gallery/3.jpg', '/gallery/4.jpg', '/gallery/5.jpg', '/gallery/6.jpg', '/gallery/7.jpg', '/gallery/8.jpg', '/gallery/9.jpg', '/gallery/10.jpg', '/gallery/11.jpg', '/gallery/12.jpg', '/gallery/13.jpg', '/gallery/14.jpg'];
 export default function Hobbies() {
     return (
         <div className='flex flex-col w-full items-center'>
@@ -25,14 +25,17 @@ export default function Hobbies() {
                                     width={300}
                                     height={300}
                                     priority
-                                    className="w-auto h-auto" />
+                                    className="w-auto h-auto ml-1" />
                             ))
                         }
                     </Marquee>
                 </div>
             </div>
-            <div className="text-xl font-bold m-1">Ultimate Frisbee</div>
-            <div className="text-xl font-bold m-2">Cycling</div>
+            <div>
+                <div className="text-xl font-bold m-1">Ultimate Frisbee</div>
+                <div className="md:max-w-xl sm:max-w-md self-center justify-center items-center align-middle text-center">
+                    I started playing Ultimate with <a href='https://instagram.com/bitsufc' target="_blank" className="underline">BITS UFC</a> in 2016. I served as the team coordinator in 2018-19, and organized India West Zone Sectionals tournament in 2018.</div>
+            </div>
         </div>
     )
 }

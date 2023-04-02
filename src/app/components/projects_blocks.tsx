@@ -20,7 +20,7 @@ export default function ProjectsBlock(props: ProjectsProps) {
                         width={40}
                         height={40}
                         alt={props.title}
-                        className="w-12 h-12" /> :
+                        className="w-15 h-15" /> :
                     props.icon ?
                         <props.icon htmlColor='#1e293b' className='scale-100 md:scale-150 z-50' /> : undefined
 

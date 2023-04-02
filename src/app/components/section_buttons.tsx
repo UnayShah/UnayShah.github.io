@@ -15,9 +15,15 @@ export default function SectionButtons(props: SectionButtonsProps) {
 
     const handleScroll = (targetId: string) => {
         const elem = document.getElementById(targetId);
-        elem?.scrollIntoView({
-            behavior: "smooth",
-        });
+        if (elem) {
+            const pos = elem.style.position;
+            const top = elem.style.top;
+            elem.style.position = 'relative';
+            elem.style.top += '-50px';
+            elem.scrollIntoView({ behavior: 'smooth' });
+            elem.style.top = top
+            elem.style.position = pos
+        }
     };
 
     return (
@@ -41,16 +47,6 @@ export default function SectionButtons(props: SectionButtonsProps) {
                 visibility={expVisible}
                 key='experience'
             />
-
-            <SectionButton handleScroll={handleScroll}
-                handleScrollId='education'
-                hoverText='Education'
-                icon={School}
-                setVisibility={setEduVisible}
-                toggleMenu={props.toggleMenu}
-                visibility={eduVisible}
-                key='education'
-            />
             <SectionButton handleScroll={handleScroll}
                 handleScrollId='projects'
                 hoverText='Projects'
@@ -59,6 +55,15 @@ export default function SectionButtons(props: SectionButtonsProps) {
                 toggleMenu={props.toggleMenu}
                 visibility={projectsVisible}
                 key='projects'
+            />
+            <SectionButton handleScroll={handleScroll}
+                handleScrollId='education'
+                hoverText='Education'
+                icon={School}
+                setVisibility={setEduVisible}
+                toggleMenu={props.toggleMenu}
+                visibility={eduVisible}
+                key='education'
             />
             <SectionButton handleScroll={handleScroll}
                 handleScrollId='hobbies'
