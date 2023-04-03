@@ -24,6 +24,9 @@ export default function Bio() {
                         </div>
                         <div>
                             Actively looking for Summer 2023 Internships.
+                            [<a href='https://drive.google.com/file/d/14DjTlT3cCdhyEZ-6TZ7GgpprgB31BtYB' target='_blank' className='underline'>
+                                 R&#233;sum&#233;
+                            </a>]
                         </div>
                     </div>
                 </div>
