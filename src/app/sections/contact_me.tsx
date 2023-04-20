@@ -5,7 +5,7 @@ import ContactForm from "../components/contact_form";
 
 export default function ContactMe() {
     const [githubLogoSrc] = useState("\\icons\\github\\github_white.svg");
-    const [instagramLogoSrc, setInstagramLogoSrc] = useState("\\icons\\instagram\\instagram_black.svg");
+    const [instagramLogoSrc, setInstagramLogoSrc] = useState("\\icons\\instagram\\instagram_white.svg");
     return (
         <div>
             <div className="text-2xl font-bold sm:text-3xl self-center text-center mt-2 md:mt-5">
@@ -43,7 +43,7 @@ export default function ContactMe() {
                             width={40}
                             height={40}
                             onMouseOver={() => setInstagramLogoSrc("\\icons\\instagram\\instagram_white.svg")}
-                            onMouseOut={() => setInstagramLogoSrc("\\icons\\instagram\\instagram_black.svg")}
+                            onMouseOut={() => setInstagramLogoSrc("\\icons\\instagram\\instagram_white.svg")}
                             className="rounded-md p-1 transition-all m-2 bg-transparent hover:bg-instagram-background opacity-50 hover:opacity-100" />
                     </a>
 

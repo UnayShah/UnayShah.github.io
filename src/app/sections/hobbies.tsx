@@ -16,7 +16,8 @@ export default function Hobbies() {
                 <div className="items-center self-center">
                     <Marquee className="md:max-w-xl sm:max-w-md"
                         gradient={false}
-                        speed={15}>
+                        speed={15}
+                        pauseOnHover>
                         {
                             imageList.map((image, index) => (
                                 <Image src={image}

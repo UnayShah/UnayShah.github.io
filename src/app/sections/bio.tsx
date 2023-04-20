@@ -17,6 +17,14 @@ export default function Bio() {
                     <div className='text-2xl sm:text-3xl md:text-5xl font-bold mb-2 md:mb-5 text-center lg:text-left'>
                         Unay Shah
                     </div>
+                    <div>
+                        <button
+                            className='mt-2 mb-2 bg-slate-700 rounded-md p-1 md:p-3 hover:bg-slate-600 z-50'
+                            style={{ color: '#e2e8f0' }}
+                            onClick={() => window.open('https://drive.google.com/file/d/14DjTlT3cCdhyEZ-6TZ7GgpprgB31BtYB','_blank', 'noreferrer')}>
+                            R&#233;sum&#233;
+                        </button>
+                    </div>
                     <div className='text-lg min-w-fit justify-center text-center lg:text-left'>
                         <div className='mb-2 md:mb-5'>
                             Pursuing MS Robotics at University of California San Diego.<br />
@@ -24,9 +32,6 @@ export default function Bio() {
                         </div>
                         <div>
                             Actively looking for Summer 2023 Internships.
-                            [<a href='https://drive.google.com/file/d/14DjTlT3cCdhyEZ-6TZ7GgpprgB31BtYB' target='_blank' className='underline'>
-                                 R&#233;sum&#233;
-                            </a>]
                         </div>
                     </div>
                 </div>
