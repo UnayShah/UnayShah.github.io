@@ -1,6 +1,6 @@
 # Unay Shah
 Hello!! Welcome to the GitHub page of my website.<br>
-You can find my website at [unayshah.vercel.com](unayshah.vercel.com)
+You can find my website at [unayshah.vercel.com](https://unayshah.vercel.app/)
 
 ## About Me 
 I am currently a Master's degree student at University of California San Diego.
