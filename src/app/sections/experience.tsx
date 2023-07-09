@@ -7,14 +7,37 @@ export default function Experience() {
                 Experience
             </div>
             <div className="flex flex-col flex-1 justify-center">
+                <ExperienceBlock logo_path="/photos/UCSD.png"
+                    alt="UCSD"
+                    width={50}
+                    height={50}
+                    position="Graduate Researcher"
+                    location="San Diego, CA, USA"
+                    description={"Conducting research under Prof. Cheolhong An to obtain 3D cell models from Phase Contrast microscopy images. "}
+                    company_name="University of California, San Diego"
+                    duration="Mar 2023 - Sep 2023" />
+
+                <ExperienceBlock logo_path="/photos/RiaMoneyTransfer.png"
+                    alt="Ria Money Transfer Logo"
+                    width={50}
+                    height={50}
+                    position="Software Intern"
+                    location="Buena Park, CA, USA"
+                    description={["Developing a self-healing program to effectively identify and resolve deployment server errors. [Python, Flask]",
+                        "Leveraging Opsgenie actions, the program filters issues using the logs received and runs predefined shell scripts to autonomously fix server issues.",
+                        "Deployed the system on Amazon ECS with a GitHub self-hosted runner."]}
+                    company_name="Ria Money Transfer"
+                    duration="Jun 2023 - Sep 2023" />
+
                 <ExperienceBlock logo_path="/photos/OmniSync.png"
                     alt="OmniSync Incorporated Logo"
                     width={50}
                     height={50}
                     position="Software Intern"
                     location="San Diego, CA, USA"
-                    description={["Transferred Segment Data logs from Amazon S3 Buckets to AWS Postgres Database.",
-                        "Successfully processed and transferred 300K+ logs, tracking file creation data and other metadata.",]}
+                    description={["Built a Python pipeline to transfer Segment Data logs from Amazon S3 Buckets to an AWS Postgres Database.",
+                        "Parsed and organized the data into SQL tables, enabling querying and analysis of metrics for 4 teams.",
+                        "Successfully processed and transferred over 300K logs, ensuring efficient and accurate data transfer."]}
                     company_name="OmniSync Incorporated"
                     duration="Jan 2023 - Mar 2023" />
 
