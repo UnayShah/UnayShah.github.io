@@ -3,12 +3,14 @@ Hello!! Welcome to the GitHub page of my website.<br>
 You can find my website at [unayshah.vercel.com](https://unayshah.vercel.app/)
 
 ## About Me 
-I am currently a Master's degree student at University of California San Diego.
+I am a Master's degree student at University of California San Diego.
 * My interests include software development, computer vision and machine learning.
 * Currently I am taking courses in linear algebra, computer vision, probabilistic learning and robotics.
 
 ## Experience
 I have 3 years of experience as a full stack software developer at
+* Ria Money Transfer, Buena Park, California, USA
+* OmniSync Incorporated, San Diego, California, USA
 * Deutsche Bank, Pune, India
 * Samsung Research Institute, Bangalore, India
 * OmniSync Incorporated, San Diego, USA
