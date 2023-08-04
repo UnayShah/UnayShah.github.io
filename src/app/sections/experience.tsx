@@ -7,6 +7,21 @@ export default function Experience() {
                 Experience
             </div>
             <div className="flex flex-col flex-1 justify-center">
+
+                <ExperienceBlock logo_path="/photos/RiaMoneyTransfer.png"
+                    alt="Ria Money Transfer Logo"
+                    width={50}
+                    height={50}
+                    position="Software Intern"
+                    location="Buena Park, CA, USA"
+                    description={["Developing a Python application with Flask to efficiently identify and resolve server errors.",
+                        "Leveraging Opsgenie to access failure logs, the program filters issues and runs predefined shell scripts to autonomously fix server issues. Deployed the application on AWS ECS and using GitHub self-hosted runners.",
+                        "Enabling quicker response to server issues and replacing manual intervention by Network Operations team.",
+                        "Using GitHub actions for CI/CD to create and deploy Docker images and run scripts on runners.",
+                        "Built an architecture to allow flexible addition of error descriptions and commands to fix issues."]}
+                    company_name="Ria Money Transfer"
+                    duration="Jun 2023 - Sep 2023" />
+
                 <ExperienceBlock logo_path="/photos/UCSD.png"
                     alt="UCSD"
                     width={50}
@@ -16,18 +31,6 @@ export default function Experience() {
                     description={"Conducting research under Prof. Cheolhong An to obtain 3D cell models from Phase Contrast microscopy images. "}
                     company_name="University of California, San Diego"
                     duration="Mar 2023 - Sep 2023" />
-
-                <ExperienceBlock logo_path="/photos/RiaMoneyTransfer.png"
-                    alt="Ria Money Transfer Logo"
-                    width={50}
-                    height={50}
-                    position="Software Intern"
-                    location="Buena Park, CA, USA"
-                    description={["Developing a self-healing program to effectively identify and resolve deployment server errors. [Python, Flask]",
-                        "Leveraging Opsgenie actions, the program filters issues using the logs received and runs predefined shell scripts to autonomously fix server issues.",
-                        "Deployed the system on Amazon ECS with a GitHub self-hosted runner."]}
-                    company_name="Ria Money Transfer"
-                    duration="Jun 2023 - Sep 2023" />
 
                 <ExperienceBlock logo_path="/photos/OmniSync.png"
                     alt="OmniSync Incorporated Logo"
@@ -47,10 +50,13 @@ export default function Experience() {
                     height={40}
                     position="Software Developer"
                     location="Pune, MH, India"
-                    description={["Developed an application to extract data from images of forms, like US tax forms, German sick notes, loan contracts etc.",
-                        "Worked on OpenCV, YOLO, MRCNN and Siamese Networks along with Java, Python, React, SQL, APIs, Google Cloud, Openshift, SpringBoot and Flask.",
-                        "Demonstrated application capabilities to client teams.",
-                        "Mentored 3 interns and 4 junior employees over a period of 2 years."]}
+                    description={["Developed an image data extraction application for 50+ document types (US tax forms, loan contracts etc.), serving 10+ teams and processing 1000+ forms daily using Java, Python, OpenCV and Tesseract OCR.",
+                        "Independently built a Java backend to create form templates and identify form types using image similarity.",
+                        "Utilized OpenCV with YOLO and MRCNN in Python for extracting paragraphs, boxed letters, checkboxes, barcodes, signatures, and bordered tables.",
+                        "Implemented signature forgery detection model using Siamese Networks and SIFT Feature Matching, validating signatures on 1000+ documents every hour with 84% accuracy.",
+                        "Led engagement with 6 client teams, demonstrating the application's capabilities, gathering valuable feedback, and spearheading customized feature implementations to meet their specific requirements.",
+                        "Oversaw and contributed to development of a ReactJS web application with Java Springboot and Python Flask APIs for data extraction and file management services, deployed and maintained on OpenShift Pods and GCP.",
+                        "Mentored 3 interns and 4 junior employees, overseeing projects involving spaCy NLP, GCP Document AI, handwritten text OCR, and SciTSR table extraction."]}
                     company_name="Deutsche Bank India"
                     duration="Aug 2020 - Jun 2022" />
 

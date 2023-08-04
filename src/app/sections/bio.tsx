@@ -31,7 +31,7 @@ export default function Bio() {
                             Interests: Computer Vision, Deep Learning, Software Development.
                         </div>
                         <div>
-                            Actively looking for Summer 2023 Internships.
+                            Open to work from December 2023 in Machine Learning, Vision, Robotics and Software Development Roles.
                         </div>
                     </div>
                 </div>
