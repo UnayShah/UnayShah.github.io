@@ -82,7 +82,7 @@ export default function Skills() {
         },
         {
             skill_name: "GitHub",
-            logo_path: "/skills_logos/GitHub.svg",
+            logo_path: "/skills_logos/github.svg",
             alt: "GitHub",
             skill_level: 1
         },
