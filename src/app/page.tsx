@@ -7,6 +7,7 @@ import Sidebar from './sections/sidebar'
 import Hobbies from './sections/hobbies'
 import Head from 'next/head'
 import Projects from './sections/projects'
+import Skills from './sections/skills'
 
 export default function Home() {
   return (
@@ -24,6 +25,9 @@ export default function Home() {
         </div>
         <div id='experience'>
           <Experience />
+        </div>
+        <div id='skills'>
+          <Skills />
         </div>
         <div id='projects'>
           <Projects />

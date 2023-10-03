@@ -8,7 +8,7 @@ export default function Sidebar() {
     return (
         <div>
             <div className='flex-col flex fixed'>
-                <div className='flex sm:hidden w-screen h-fit flex-col justify-end bg-slate-800'>
+                <div className='flex md:hidden w-[100vw] h-fit flex-col justify-end bg-slate-800'>
                     <button
                         className='border-slate-500 border-2 rounded-lg m-2 p-2 w-fit ml-4'
                         onClick={() => toggleMenu(!menu)}>
@@ -23,8 +23,8 @@ export default function Sidebar() {
                     onClick={() => toggleMenu(false)} />
             </div>
 
-            <div className='hidden sm:flex w-full h-fit md:w-fit md:h-full flex-row md:flex-col fixed justify-center'>
-                <div className='invisible sm:visible h-fit w-full sm:flex-1 sm:w-0 sm:flex z-50'>
+            <div className='hidden md:flex md:w-fit md:h-full md:flex-col fixed justify-center'>
+                <div className='invisible md:visible h-fit w-full sm:flex-1 sm:w-0 sm:flex z-50'>
                     <div className='bg-slate-900 flex-1 md:grow-0'>
                         <button
                             className='m-4 p-1 md:p-3'>

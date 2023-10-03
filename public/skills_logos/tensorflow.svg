@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg viewBox="11.2644 5.6813 159.54 151.86" width="159.54" height="151.86"
+    xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <defs>
+        <clipPath id="clip-path">
+            <polygon class="cls-1"
+                points="402 112.59 337.47 75.72 337.47 226.84 363.25 211.88 363.25 169.36 382.72 180.63 382.61 151.54 363.25 140.48 363.25 123.59 402.09 146.03 402 112.59"
+                style="fill: none;" />
+        </clipPath>
+        <linearGradient id="linear-gradient" x1="261.18" y1="151.1" x2="419.65" y2="151.1"
+            gradientUnits="userSpaceOnUse">
+            <stop offset="0" stop-color="#ff6f00" />
+            <stop offset="1" stop-color="#ffa800" />
+        </linearGradient>
+        <clipPath id="clip-path-2">
+            <polygon class="cls-1"
+                points="267.14 112.59 331.67 75.72 331.67 226.84 305.89 211.88 305.89 123.59 267.05 146.03 267.14 112.59"
+                style="fill: none;" />
+        </clipPath>
+        <linearGradient id="linear-gradient-2" x1="260.11" y1="151.1" x2="418.58" y2="151.1"
+            xlink:href="#linear-gradient" />
+    </defs>
+    <g id="group" transform="matrix(1, 0, 0, 1, 28.79961585998535, 22.383319854736342)">
+        <title>FullColorPrimary Vertical</title>
+        <g class="cls-2" style="clip-path: url('#clip-path');"
+            transform="matrix(1, 0, 0, 1, -277.645203, -91.872002)">
+            <rect class="cls-3" x="261.18" y="75.17" width="158.47" height="151.86"
+                style="fill: url('#linear-gradient');" />
+        </g>
+        <g class="cls-4" style="clip-path: url('#clip-path-2');"
+            transform="matrix(1, 0, 0, 1, -277.645203, -91.872002)">
+            <rect class="cls-5" x="260.11" y="75.17" width="158.47" height="151.86"
+                style="fill: url('#linear-gradient-2');" />
+        </g>
+    </g>
+</svg>
