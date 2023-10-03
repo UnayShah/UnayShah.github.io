@@ -1,6 +1,7 @@
-import { Code, ContactMail, Fitbit, Menu, Person, School, Work } from '@mui/icons-material'
+import { Code, ContactMail, Fitbit, Person, School, Work } from '@mui/icons-material'
 import { useState } from 'react'
 import SectionButton from '../components/section_button';
+import RepositoryIcon from '../../../public/icons/repositoryIcon';
 
 type SectionButtonsProps = {
     toggleMenu: any,
@@ -10,6 +11,7 @@ export default function SectionButtons(props: SectionButtonsProps) {
     const [expVisible, setExpVisible] = useState(false);
     const [eduVisible, setEduVisible] = useState(false);
     const [hobbiesVisible, setHobbiesVisible] = useState(false);
+    const [skillsVisible, setSkillsVisible] = useState(false);
     const [projectsVisible, setProjectsVisible] = useState(false);
     const [contactVisible, setContactVisible] = useState(false);
 
@@ -25,9 +27,8 @@ export default function SectionButtons(props: SectionButtonsProps) {
             elem.style.position = pos
         }
     };
-
     return (
-        <div className='flex md:flex-col sm:flex-row flex-col'>
+        <div className='flex md:flex-col sm:flex-row flex-col min-w-[100vh]'>
             <SectionButton handleScroll={handleScroll}
                 handleScrollId='bio'
                 hoverText='About Me'
@@ -48,9 +49,18 @@ export default function SectionButtons(props: SectionButtonsProps) {
                 key='experience'
             />
             <SectionButton handleScroll={handleScroll}
+                handleScrollId='skills'
+                hoverText='Skills'
+                icon={Code}
+                setVisibility={setSkillsVisible}
+                toggleMenu={props.toggleMenu}
+                visibility={skillsVisible}
+                key='skills'
+            />
+            <SectionButton handleScroll={handleScroll}
                 handleScrollId='projects'
                 hoverText='Projects'
-                icon={Code}
+                icon={RepositoryIcon}
                 setVisibility={setProjectsVisible}
                 toggleMenu={props.toggleMenu}
                 visibility={projectsVisible}

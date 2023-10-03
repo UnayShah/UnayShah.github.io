@@ -5,5 +5,5 @@
 html,
 body {
     background-color: #e2e8f0;
-    width: 98vw;
+    overflow-x: hidden;
 }

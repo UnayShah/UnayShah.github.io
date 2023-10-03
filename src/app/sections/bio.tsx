@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export default function Bio() {
     return (
-        <div className='flex min-h-screen w-full justify-center items-center flex-col'>
+        <div className='flex min-h-screen min-w-[90vw] md:ml-[10vh] justify-center items-center flex-col'>
             <div className='flex flex-col lg:flex-row flex-1 justify-center'>
                 <div className='self-center'>
                     <Image
@@ -17,11 +17,11 @@ export default function Bio() {
                     <div className='text-2xl sm:text-3xl md:text-5xl font-bold mb-2 md:mb-5 text-center lg:text-left'>
                         Unay Shah
                     </div>
-                    <div>
+                    <div className='justify-center lg:justify-start flex'>
                         <button
                             className='mt-2 mb-2 bg-slate-700 rounded-md p-1 md:p-3 hover:bg-slate-600 z-50'
                             style={{ color: '#e2e8f0' }}
-                            onClick={() => window.open('https://drive.google.com/file/d/14DjTlT3cCdhyEZ-6TZ7GgpprgB31BtYB','_blank', 'noreferrer')}>
+                            onClick={() => window.open('https://drive.google.com/file/d/15RW62Oa-k1X9G1oQ9xh1arh1I1UdJrFi', '_blank', 'noreferrer')}>
                             R&#233;sum&#233;
                         </button>
                     </div>

@@ -16,7 +16,7 @@ type ExperienceProps = {
 
 export default function WorkExperienceBlock(props: ExperienceProps) {
     return (
-        <div className="flex flex-col md:flex-row mt-5 mb-5">
+        <div className="flex flex-col md:flex-row mt-14 mb-14 lg:mt-10 lg:mb-10">
             <div className="m-0 md:mr-4 flex justify-center">
                 <div>
                     <Image
