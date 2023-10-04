@@ -14,9 +14,9 @@ export default function SkillsBlock(props: SkillsProps) {
 
     const circles = [];
     for (let i = 0; i < Math.min(props.skill_level, total_skill_level); i++)
-        circles.push(<div className="w-3 h-3 rounded-full bg-blue-500 mr-1"></div>);
+        circles.push(<div className="w-3 h-3 rounded-full bg-blue-500 mr-1" key={props.skill_name + '_' + String(i)}></div>);
     for (let i = 0; i < total_skill_level - Math.min(props.skill_level, total_skill_level); i++)
-        circles.push(<div className="w-3 h-3 rounded-full bg-gray-500 mr-1"></div>);
+        circles.push(<div className="w-3 h-3 rounded-full bg-gray-500 mr-1" key={props.skill_name + '_t' + String(i)}></div>);
 
     return (
         <div className="flex flex-col md:flex-row justify-center items-center">

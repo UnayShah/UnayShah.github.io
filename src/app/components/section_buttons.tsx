@@ -28,7 +28,7 @@ export default function SectionButtons(props: SectionButtonsProps) {
         }
     };
     return (
-        <div className='flex md:flex-col sm:flex-row flex-col min-w-[100vh]'>
+        <div className='flex md:flex-col sm:flex-row flex-col min-w-fit'>
             <SectionButton handleScroll={handleScroll}
                 handleScrollId='bio'
                 hoverText='About Me'
