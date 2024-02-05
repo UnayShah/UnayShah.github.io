@@ -10,7 +10,7 @@ export default function Education() {
                 <div className="m-5">
                     <EducationBlock alt="UCSD"
                         degree="MS Robotics"
-                        duration="Sep 2022 - Dec 2023"
+                        duration="Sep 2022 - Mar 2024"
                         logo="/photos/UCSD.png"
                         name="University of California San Diego"
                         key="UCSD" />
