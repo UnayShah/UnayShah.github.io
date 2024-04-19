@@ -31,7 +31,7 @@ export default function Bio() {
                             Interests: Computer Vision, Deep Learning, Software Development.
                         </div>
                         <div>
-                            Open to work from April 2024 in Machine Learning, Vision, Robotics and Software Development Roles.
+                            Open to work from June 2024 in Machine Learning, Vision, Robotics and Software Development Roles.
                         </div>
                     </div>
                 </div>
