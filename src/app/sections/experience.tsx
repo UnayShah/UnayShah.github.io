@@ -8,6 +8,16 @@ export default function Experience() {
             </div>
             <div className="flex flex-col flex-1 justify-center">
 
+                <ExperienceBlock logo_path="/photos/Wizerr.png"
+                    alt="Wizerr Logo"
+                    width={50}
+                    height={50}
+                    position="Software Developer"
+                    location="San Jose, CA, USA"
+                    description={"A young fast paced startup building the AI Co-pilot for the electronics industry using the latest in ML technologies."}
+                    company_name="Wizerr AI"
+                    duration="Jan 2024 - Present" />
+
                 <ExperienceBlock logo_path="/photos/RiaMoneyTransfer.png"
                     alt="Ria Money Transfer Logo"
                     width={50}

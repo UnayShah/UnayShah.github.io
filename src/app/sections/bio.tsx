@@ -31,7 +31,8 @@ export default function Bio() {
                             Interests: Computer Vision, Deep Learning, Software Development.
                         </div>
                         <div>
-                            Open to work from June 2024 in Machine Learning, Vision, Robotics and Software Development Roles.
+                            Software Developer at <a href='https://www.wizerr.ai/' className='underline font-medium'>Wizerr AI</a>.
+                            {/* Open to work from June 2024 in Machine Learning, Vision, Robotics and Software Development Roles. */}
                         </div>
                     </div>
                 </div>
