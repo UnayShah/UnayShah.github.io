@@ -26,13 +26,13 @@ export default function Bio() {
                         </button>
                     </div>
                     <div className='text-lg min-w-fit justify-center text-center lg:text-left'>
-                        <div className='mb-2 md:mb-5'>
-                            Pursuing MS Robotics at University of California San Diego.<br />
-                            Interests: Computer Vision, Deep Learning, Software Development.
-                        </div>
                         <div>
                             Software Developer at <a href='https://www.wizerr.ai/' className='underline font-medium'>Wizerr AI</a>.
                             {/* Open to work from June 2024 in Machine Learning, Vision, Robotics and Software Development Roles. */}
+                        </div>
+                        <div className='mb-2 md:mb-5'>
+                            MS Robotics at University of California San Diego.<br />
+                            Interests: Computer Vision, Deep Learning, Software Development.
                         </div>
                     </div>
                 </div>
